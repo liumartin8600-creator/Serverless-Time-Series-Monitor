@@ -1,7 +1,8 @@
 # Serverless-Time-Series-Monitor
 基于 Cloudflare Workers + D1 构建的高频异构时序数据流监控与自适应平滑预测边缘计算架构
-# 📈 全球 QDII 基金量化套利与综合监控终端
-**Global QDII Quant & Arbitrage Terminal**
+# 📈  核心引擎：高频异构时序数据流计算与自适应预测框架
+**实战场景落地：全球 QDII 基金量化套利与综合监控终端 (Global QDII Quant Terminal)**
+
 
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?logo=cloudflare&logoColor=white)](#)
 [![Cloudflare D1](https://img.shields.io/badge/Cloudflare-D1-F38020?logo=cloudflare&logoColor=white)](#)
