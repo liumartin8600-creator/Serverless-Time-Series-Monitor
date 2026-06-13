@@ -522,23 +522,7 @@ CREATE TABLE IF NOT EXISTS fund_positions (
 );
 ```
 
-#### 表 4：雷达 Spread 历史
-
-```sql
-CREATE TABLE IF NOT EXISTS radar_spread_history (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    trade_date TEXT NOT NULL,
-    record_time TEXT NOT NULL,
-    radar_id TEXT NOT NULL,
-    fund_a TEXT NOT NULL,
-    fund_b TEXT,
-    premium_a REAL,
-    premium_b REAL,
-    spread REAL
-);
-```
-
-> 如当前版本还包含其他业务表，请根据实际代码补充建表语句。
+ 
 
 ### 7. 发布
 
@@ -566,10 +550,10 @@ wrangler deploy
 #### 盘前 / 盘中触发
 
 ```cron
-*/3 1-8 * * *
+*/3 1-6 * * *
 ```
 
-对应北京时间约 `09:00 - 16:59`，每 3 分钟执行一次盘中流程。
+对应北京时间约 `09:00 - 14:59`，每 3 分钟执行一次盘中流程。
 
 #### 非盘中净值更新
 
